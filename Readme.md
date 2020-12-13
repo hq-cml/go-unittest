@@ -27,7 +27,7 @@ Monkey是Golang的一个猴子补丁（monkeypatching）框架
 原理是在运行时通过汇编语句重写可执行文件，将待打桩函数或方法的实现跳转到桩实现，原理和热补丁类似
 
 ###GoMonkey：
-可以认为是monkey的升级版，支持函数、方法、全局变量打桩（关闭内联-gcflags=all=-l）
+可以认为是monkey的升级版，支持函数、方法、全局变量打桩（关闭内联-gcflags=all=-l(go1.10 and above)）
 
 ###GoSqlMock：
 sqlmock包，用于单测中mock db操作
